@@ -149,7 +149,6 @@ function genWords() {
 
 function startPlay() {
 	choosedLvl.setAttribute("hidden", "");
-
 	timeLeftSpan.innerHTML = defaultLevSeconds;
 	let start = setInterval(() => {
 		timeLeftSpan.innerHTML--;
