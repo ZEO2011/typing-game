@@ -93,8 +93,7 @@ let finishMessage = document.querySelector(".finish");
 let since = document.querySelector(".score .since");
 
 // Saved Score
-
-if (localStorage.length !== 0) {
+if (localStorage.score !== undefined) {
 	scoreGot.innerHTML = JSON.parse(localStorage.score).score;
 	since.innerHTML = `Since ${JSON.parse(localStorage.score).date}`;
 	score.classList.add("saved");
